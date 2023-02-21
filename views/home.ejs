@@ -2,11 +2,12 @@
 
 <h1>Home</h1>
 <p><%= startingContent %></p>
-
+<br>
 
 <% postContent.forEach(function(ele){ %>
   <h1><%= ele.title %></h1>
-  <p><%= (ele.content).substring(0,100) %>....<a href="/posts/<%= ele._id%>"> Read More...</a></p>
+  <p><%= (ele.content).substring(0,200) %>....<a href="/posts/<%= ele._id%>"> Read More...</a></p>
+  <br>
 <% }); %>
 
 
@@ -14,9 +15,8 @@
 
 
 
-<br>
 <form action="/" method="post">
-  <button class="btn btn-primary" type="submit" name="button">Compose</button>
+  <button class="btn btn-primary" type="submit" name="button">Add Blog</button>
 </form>
 
 

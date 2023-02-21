@@ -1,6 +1,7 @@
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
 }
 .navbar {
     padding-top: 15px;
@@ -9,39 +10,36 @@
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
-}
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    letter-spacing: 2.5px;
+    background-color: #1abc9c;
 }
 
-.footer-padding {
-	/* padding-bottom: 80px; */
-  position: sticky;
-  bottom: 0;
-}
-.icon{
-  position: relative;
-  right: 20px;
-  bottom: 3px;
-  margin: 0;
+.navbar-nav  li a{
+  margin-right: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff !important;
 }
 
-.footer {
-	position: absolute;
-  bottom: 0;
-	text-align: center;
-	/* margin-bottom: 0; */
-  /* position: sticky;
-  bottom: 0; */
-	width: 100%;
-	height: 110px;
-	background-color: #1abc9c;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff !important;
+  /* padding-right: 20px; */
 }
 
-.footer p {
-  text-align: center;
-	/* margin-top: 2px; */
-	font-size: 14px;
-  color: #fff;
+.navbar-nav  li a:hover, .navbar-brand:hover {
+    color: #000 !important;
+}
+h1{
+  font-weight: 600;
+}
+h1:hover{
+  color: #1abc9c;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  padding-top: 20px;
 }
