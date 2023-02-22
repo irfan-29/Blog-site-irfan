@@ -33,10 +33,10 @@
 .navbar-nav  li a:hover, .navbar-brand:hover {
     color: #000 !important;
 }
-h1{
+h1, h2{
   font-weight: 600;
 }
-h1:hover{
+h1:hover, h2:hover{
   color: #1abc9c;
 }
 a{
