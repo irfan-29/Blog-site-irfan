@@ -2,10 +2,13 @@
 
 <h1>Blogs</h1>
 <br>
-
 <% postContent.forEach(function(ele){ %>
-  <h2><%= ele.title %></h2>
-  <p><%= (ele.content).substring(0,200) %>....<a href="/posts/<%= ele._id%>"> Read More...</a></p>
+  <div class="blog">
+  <h2 style="display: flex;"><%= ele.title %></h2>
+  <p style="padding-top: 15px;"><%= (ele.content).substring(0,325) %>....<a href="/posts/<%= ele._id%>"> Read More...</a></p>
+  <p style="font-weight: 500; color: black; font-size: 1.25rem; text-align: right; padding-right: 15px;">- <%= ele.author %></p>
+</div>
+
   <br>
 <% }); %>
 
